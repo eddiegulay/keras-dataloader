@@ -7,7 +7,7 @@ In Keras, you generally don't need a separate DataLoader class like you might in
 ## Example usage:
 #### Assuming you have your data and labels ready, and you have defined a model called 'model'
 ##### data and labels should be NumPy arrays
-"""
+```python
 data = np.random.random((1000, 32))  # Replace this with your actual data
 labels = np.random.randint(2, size=(1000,))  # Replace this with your actual labels
 
@@ -16,4 +16,4 @@ batch_size = 32
 train_dataset = CustomDataset(data, labels, batch_size)
 
 model.fit_generator(generator=train_dataset, epochs=10)
-"""
+```
